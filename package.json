@@ -9,6 +9,8 @@
     "/dist"
   ],
   "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
     "build": "npm run build:lib && npm run build:app",
     "build:lib": "npx rimraf dist && npm run build-esm && npm run build-cjs && npm run build-types",
     "build:app": "npx vite build",
@@ -53,6 +55,8 @@
   "homepage": "https://github.com/cinar/indicatorts#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
     "@vitejs/plugin-react": "^5.1.2",
